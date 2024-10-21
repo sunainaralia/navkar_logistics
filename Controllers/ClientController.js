@@ -114,6 +114,7 @@ export const forgotPassword = asyncFunHandler(async (req, res, next) => {
     })
     return res.status(200).json({
       success: true,
+      resetToken: resetToken,
       msg: "email is sent to your registered mail"
     })
   } catch (err) {
